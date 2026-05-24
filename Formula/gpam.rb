@@ -23,9 +23,7 @@ class Gpam < Formula
   end
 
   def install
-    arch = Hardware::CPU.arm? ? "aarch64" : "x86_64"
-    platform = OS.mac? ? "apple-darwin" : "unknown-linux-musl"
-    bin.install "gpam-v0.1.0-#{arch}-#{platform}/gpam"
+    bin.install "gpam"
   end
 
   test do
